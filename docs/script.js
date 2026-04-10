@@ -7,7 +7,7 @@ const translations = {
         'nav.about': 'Informazioni',
         'nav.gallery': 'Foto',
         'nav.restaurants': 'Locali',
-        'nav.links': 'Link Utili',
+        'nav.links': 'Siti Utili',
         'nav.reviews': 'Recensioni',
         'nav.tips': 'Guida',
         'nav.contact': 'Contatti',
