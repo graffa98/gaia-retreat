@@ -831,6 +831,14 @@ a:hover {
         font-size: 1.8rem;
     }
 
+    .hero-background-left {
+        display: none;
+    }
+
+    .hero-background-right {
+        width: 100%;
+    }
+
     .about-features {
         grid-template-columns: 1fr;
     }
