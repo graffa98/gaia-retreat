@@ -41,7 +41,7 @@ html {
 body {
     font-family: var(--font-sans);
     color: var(--color-text);
-    background-color: #ffffff;
+    background-color: #faf7f2;
     line-height: 1.6;
 }
 
@@ -327,7 +327,7 @@ a:hover {
    ============================================ */
 
 .about-section {
-    background-color: var(--color-light);
+    background-color: #f5ede5;
 }
 
 .about-grid {
@@ -391,6 +391,10 @@ a:hover {
    GALLERY SECTION
    ============================================ */
 
+.gallery-section {
+    background-color: #ffffff;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -444,7 +448,7 @@ a:hover {
    ============================================ */
 
 .links-section {
-    background-color: var(--color-light);
+    background-color: #f0e8e0;
 }
 
 .links-grid {
@@ -483,6 +487,10 @@ a:hover {
 /* ============================================
    RESTAURANTS SECTION
    ============================================ */
+
+.restaurants-section {
+    background-color: #f8f2eb;
+}
 
 .restaurants-grid {
     display: grid;
@@ -538,7 +546,7 @@ a:hover {
    ============================================ */
 
 .travel-tips-section {
-    background-color: var(--color-light);
+    background-color: #f5ede5;
 }
 
 .tips-grid {
@@ -571,7 +579,7 @@ a:hover {
    ============================================ */
 
 .testimonials-section {
-    background-color: #ffffff;
+    background-color: #ebe3db;
 }
 
 .testimonials-grid {
@@ -618,6 +626,10 @@ a:hover {
 /* ============================================
    CONTACT SECTION
    ============================================ */
+
+.contact-section {
+    background-color: #f0e8e0;
+}
 
 .contact-content {
     display: grid;
