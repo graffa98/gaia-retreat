@@ -212,12 +212,22 @@ a:hover {
 .hero-background {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 60%;
     height: 100%;
+    opacity: 0.3;
+}
+
+.hero-background-left {
+    left: 0;
+    width: 40%;
+    background: url('images/apartment-view.jpg') no-repeat left center;
+    background-size: cover;
+}
+
+.hero-background-right {
+    right: 0;
+    width: 40%;
     background: url('images/town_view.jpg') no-repeat right center;
     background-size: cover;
-    opacity: 0.3;
 }
 
 .hero-content {
