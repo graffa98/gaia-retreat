@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaia Retreat Apartment - Luxury vacation rental in Riomaggiore, Cinque Terre">
+    <meta name="theme-color" content="#2d5016">
+    <title>Gaia Retreat Apartment - Riomaggiore, Cinque Terre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Gaia Retreat</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#about" class="nav-link" data-i18n="nav.about">Informazioni</a>
+                <a href="#gallery" class="nav-link" data-i18n="nav.gallery">Foto</a>
+                <a href="#restaurants" class="nav-link" data-i18n="nav.restaurants">Locali</a>
+                <a href="#testimonials" class="nav-link" data-i18n="nav.reviews">Recensioni</a>
+                <a href="#travel-tips" class="nav-link" data-i18n="nav.tips">Guida</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contatti</a>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="it">IT</button>
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title" data-i18n="hero.title">Gaia Retreat Apartment</h2>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Un'esperienza indimenticabile a Riomaggiore, Cinque Terre</p>
+            <a href="#about" class="btn btn-primary" data-i18n="hero.cta">Scopri di più</a>
+        </div>
+        <div class="hero-background"></div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title" data-i18n="about.title">Benvenuto a Gaia Retreat</h2>
+                    <p class="about-text" data-i18n="about.description">Un rifugio accogliente nel cuore di Riomaggiore, perfetto per scoprire la bellezza delle Cinque Terre. Questa pagina è stata pensata per fornire tutte le informazioni utili per pianificare il tuo soggiorno e vivere un'esperienza autentica.</p>
+                    
+                    <div class="booking-cta">
+                        <p data-i18n="about.booking">Prenota il tuo soggiorno:</p>
+                        <a href="https://www.airbnb.it/rooms/1349419281125459428" target="_blank" class="btn btn-primary btn-airbnb" data-lang-link="airbnb-booking">
+                            <img src="images/airbnb-logo.png" alt="Airbnb" class="airbnb-logo">
+                            Gaia Retreat Apartment
+                        </a>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <span class="feature-icon">🏠</span>
+                        <h3 data-i18n="features.comfortable">Confortevole</h3>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📍</span>
+                        <h3 data-i18n="features.location">Posizione ideale</h3>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🌅</span>
+                        <h3 data-i18n="features.views">Vedute mozzafiato</h3>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">❤️</span>
+                        <h3 data-i18n="features.authentic">Esperienza autentica</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gallery.title">Galleria Foto</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/apartment-view.jpg" alt="Apartment view" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/living-room.jpg" alt="Living room" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bedroom.jpg" alt="Bedroom" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/kitchen.jpg" alt="Kitchen" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bathroom.jpg" alt="Bathroom" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/terrace.jpg" alt="Terrace" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/town_view.jpg" alt="Town view" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/details.jpg" alt="Details" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Useful Links Section -->
+    <section id="useful-links" class="section links-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="links.title">Link Utili per Esplorare le Cinque Terre</h2>
+            <div class="links-grid">
+                <a href="https://www.parconazionale5terre.it/arr.php" target="_blank" class="link-card" data-lang-link="parco-nazionale">
+                    <span class="link-icon">✈️</span>
+                    <h3 data-i18n="links.howtoreach">Come arrivare?</h3>
+                </a>
+                <a href="https://www.viadellamore.info/biglietti" target="_blank" class="link-card" data-lang-link="via-amore-tickets">
+                    <span class="link-icon">🎫</span>
+                    <h3 data-i18n="links.tickets">Cinque Terre Card</h3>
+                </a>
+                <a href="https://www.navigazionegolfodeipoeti.it/it/orari" target="_blank" class="link-card" data-lang-link="ferries">
+                    <span class="link-icon">⛴️</span>
+                    <h3 data-i18n="links.ferries">Orari Battelli</h3>
+                </a>
+                <a href="https://www.parconazionale5terre.it/sentieri-outdoor.php" target="_blank" class="link-card" data-lang-link="sentieri">
+                    <span class="link-icon">⛰️</span>
+                    <h3 data-i18n="links.trails">Sentieri</h3>
+                </a>
+                <a href="https://www.viadellamore.info" target="_blank" class="link-card" data-lang-link="via-amore">
+                    <span class="link-icon">❤️</span>
+                    <h3 data-i18n="links.viadellAmore">Via dell'Amore</h3>
+                </a>
+                <a href="https://lombardo-geosystems.it/mappa/Riomaggiore/" target="_blank" class="link-card">
+                    <span class="link-icon">🗺️</span>
+                    <h3 data-i18n="links.map">Mappa Interattiva</h3>
+                </a>
+                <a href="https://mobpark.eu/servizi/park-centro-stazione-la-spezia/" target="_blank" class="link-card">
+                    <span class="link-icon">🚗</span>
+                    <h3 data-i18n="links.parking1">Parcheggio La Spezia</h3>
+                </a>
+                <a href="https://www.parkopedia.it/parcheggi/garage/rio_park/19017/riomaggiore/" target="_blank" class="link-card">
+                    <span class="link-icon">🚗</span>
+                    <h3 data-i18n="links.parking2">RioPark Riomaggiore</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section id="restaurants" class="section restaurants-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="restaurants.title">I Nostri Locali Preferiti</h2>
+            <p class="section-subtitle" data-i18n="restaurants.subtitle">Scopri le migliori esperienze culinarie nelle Cinque Terre</p>
+            
+            <div class="restaurants-grid">
+                <!-- Riomaggiore -->
+                <div class="restaurants-category">
+                    <h3 class="category-title">Riomaggiore 🐟</h3>
+                    <div class="restaurant-list">
+                        <a href="https://www.tripadvisor.it/Restaurant_Review-g187821-d8670462-Reviews-Rio_Bistrot-Riomaggiore_Cinque_Terre_Italian_Riviera_Liguria.html" target="_blank" class="restaurant-item">
+                            <span class="rest-name">Rio Bistrot</span>
+                            <span class="rest-cuisine">Ristorante</span>
+                        </a>
+                        <a href="https://www.tripadvisor.it/Restaurant_Review-g187821-d1372485-Reviews-IL_Grottino-Riomaggiore_Cinque_Terre_Italian_Riviera_Liguria.html" target="_blank" class="restaurant-item">
+                            <span class="rest-name">Il Grottino</span>
+                            <span class="rest-cuisine">Ristorante - Pesce & Pasta</span>
+                        </a>
+                        <a href="https://www.tripadvisor.it/Restaurant_Review-g187821-d12419320-Reviews-Old_School_Riomaggiore-Riomaggiore_Cinque_Terre_Italian_Riviera_Liguria.html" target="_blank" class="restaurant-item">
+                            <span class="rest-name">Old School Cocktails & Food</span>
+                            <span class="rest-cuisine">Cocktail Bar & Food</span>
+                        </a>
+                        <a href="https://apiedema.it" target="_blank" class="restaurant-item">
+                            <span class="rest-name">A piè de Ma</span>
+                            <span class="rest-cuisine">Bar Ristorante - Vini</span>
+                        </a>
+                        <a href="https://terradibargon.com" target="_blank" class="restaurant-item">
+                            <span class="rest-name">Terre di Bargòn</span>
+                            <span class="rest-cuisine">Degustazione Sciacchetrà</span>
+                        </a>
+                        <a href="https://www.instagram.com/donnalucia_riomaggiore/" target="_blank" class="restaurant-item">
+                            <span class="rest-name">La Bottega di Donna Lucia</span>
+                            <span class="rest-cuisine">Focacceria & Pizzeria</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Manarola -->
+                <div class="restaurants-category">
+                    <h3 class="category-title">Manarola 🍷</h3>
+                    <div class="restaurant-list">
+                        <a href="https://www.tripadvisor.it/Restaurant_Review-g187819-d27694433-Reviews-Focacceria_A_Pie_De_Campu-Manarola_Cinque_Terre_Italian_Riviera_Liguria.html" target="_blank" class="restaurant-item">
+                            <span class="rest-name">A piè de campu</span>
+                            <span class="rest-cuisine">Focacceria</span>
+                        </a>
+                        <a href="https://apiedecampu5terre.wordpress.com/" target="_blank" class="restaurant-item">
+                            <span class="rest-name">A piè de Campu Wine Experience</span>
+                            <span class="rest-cuisine">Wine Bar</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corniglia -->
+                <div class="restaurants-category">
+                    <h3 class="category-title">Corniglia ☕️</h3>
+                    <div class="restaurant-list">
+                        <a href="https://www.instagram.com/marina_di_corniglia/" target="_blank" class="restaurant-item">
+                            <span class="rest-name">Marina di Corniglia</span>
+                            <span class="rest-cuisine">Bar Drink & Food</span>
+                        </a>
+                        <a href="https://www.instagram.com/a.caneva/" target="_blank" class="restaurant-item">
+                            <span class="rest-name">A' caneva</span>
+                            <span class="rest-cuisine">Bar & Café</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Monterosso -->
+                <div class="restaurants-category">
+                    <h3 class="category-title">Monterosso 🍕</h3>
+                    <div class="restaurant-list">
+                        <a href="https://www.google.com/maps/place/Il+Frantoio/" target="_blank" class="restaurant-item">
+                            <span class="rest-name">Il Frantoio</span>
+                            <span class="rest-cuisine">Focacceria</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- La Spezia -->
+                <div class="restaurants-category">
+                    <h3 class="category-title">La Spezia 🥞</h3>
+                    <div class="restaurant-list">
+                        <a href="https://www.tripadvisor.it/Restaurant_Review-g187824-d27425636-Reviews-Ciao_Baby-La_Spezia_Province_of_La_Spezia_Liguria.html" target="_blank" class="restaurant-item">
+                            <span class="rest-name">Ciao baby</span>
+                            <span class="rest-cuisine">Brunch</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section id="travel-tips" class="section travel-tips-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="tips.title">Consigli per i Viaggiatori</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3 data-i18n="tips.best-season">Miglior Periodo</h3>
+                    <p data-i18n="tips.best-season-desc"> I mesi primaverili e di fine estate offrono il clima migliore e meno affollamento</p>
+                </div>
+                <div class="tip-card">
+                    <h3 data-i18n="tips.what-to-pack">Cosa Portare</h3>
+                    <p data-i18n="tips.what-to-pack-desc">Scarpe comode, crema solare, borraccia e una giacca leggera per le serate</p>
+                </div>
+                <div class="tip-card">
+                    <h3 data-i18n="tips.transportation">Trasporti</h3>
+                    <p data-i18n="tips.transportation-desc">La Cinque Terre Card include tutti i treni e autobus. Non è necessaria un'auto, che sconsigliamo per raggiungere le Cinque Terre</p>
+                </div>
+                <div class="tip-card">
+                    <h3 data-i18n="tips.local-cuisine">Cucina Locale</h3>
+                    <p data-i18n="tips.local-cuisine-desc">Trofie al pesto, spaghetti ai frutti di mare e focaccia sono i piatti must-try</p>
+                </div>
+                <div class="tip-card">
+                    <h3 data-i18n="tips.hiking">Escursionismo</h3>
+                    <p data-i18n="tips.hiking-desc">I sentieri sono ben segnalati. Inizia presto per evitare le folle e il caldo</p>
+                </div>
+                <div class="tip-card">
+                    <h3 data-i18n="tips.photography">Fotografia</h3>
+                    <p data-i18n="tips.photography-desc">I migliori tramonti si vedono dal nostro balcone privato e dalla Via dell'Amore, così come le stelle nelle belle serate estive</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="testimonials.title">Cosa Dicono gli Ospiti</h2>
+            <p class="section-subtitle" data-i18n="testimonials.subtitle">Leggi le esperienze di chi ha visitato Gaia Retreat</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"We had a great week at Giovanni & Gaia's place. Gaia was an amazing host, very friendly and easy to communicate with. She did everything to ensure we enjoyed our stay to the fullest. The location matches the photos and more. It's a peaceful place in a very culturally rich town. We loved everything about it."</p>
+                    <p class="testimonial-author">— Aurelie, Canada</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Gaia’s retreat was absolutely beautiful, and perfect for our stay in Riomaggiore. The view was stunning and the apartment very easy to reach. Great amenities and very clean. The inclusion of a lift pass in the booking was super helpful as we had a lot of luggage. Would absolutely recommend this apartment to everyone!"</p>
+                    <p class="testimonial-author">— Alexandra, Australia</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Absolutely amazing location with incredible views, I would stay here again in a heartbeat. Place is simple and clean, with amenities. Great access to the center of Riomaggiore without being loud at night or a long walk. Host also had amazing suggestions and we went to their referred restaurant 3 times."</p>
+                    <p class="testimonial-author">— Mark, New Mexico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Contatti</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-i18n="contact.reach">Come raggiungerci</h3>
+                    <p data-i18n="contact.location">Riomaggiore, Cinque Terre (SP), Italia</p>
+                    <p data-i18n="contact.booking-info">Per prenotazioni e domande, usa la piattaforma Airbnb</p>
+                    <a href="https://www.airbnb.it/rooms/1349419281125459428" target="_blank" class="btn btn-primary btn-airbnb" data-lang-link="airbnb-booking">
+                        <img src="images/airbnb-logo.png" alt="Airbnb" class="airbnb-logo">
+                        Prenota su Airbnb
+                    </a>
+                </div>
+                <div class="contact-sidebar">
+                    <h3 data-i18n="contact.quick-links">Link Rapidi</h3>
+                    <ul>
+                        <li><a href="https://www.airbnb.it/s/guidebooks?refinement_paths%5B%5D=%2Fguidebooks%2F6499697&s=67&unique_share_id=6a8b0c51-3e35-4cc2-86d9-555f4eb29730" target="_blank" data-i18n="contact.guidebook">Guidebook Riomaggiore</a></li>
+                        <li><a href="#restaurants" data-i18n="contact.restaurants">Ristoranti Consigliati</a></li>
+                        <li><a href="#useful-links" data-i18n="contact.info-links">Informazioni Utili</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2024 Gaia Retreat Apartment. Tutti i diritti riservati.</p>
+            <p class="footer-credit">Designed with ❤️ for travelers</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
