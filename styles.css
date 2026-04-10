@@ -206,7 +206,7 @@ a:hover {
     justify-content: center;
     overflow: hidden;
     padding: var(--spacing-xl) var(--spacing-md);
-    background: linear-gradient(135deg, var(--color-primary) 0%, #3d6b1f 100%);
+    background: #faf7f2;
 }
 
 .hero-background {
