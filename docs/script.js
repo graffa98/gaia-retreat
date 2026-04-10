@@ -174,6 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeLanguage();
     setupLanguageSwitcher();
     setupSmoothScroll();
+    setupHamburgerMenu();
 });
 
 /**
@@ -294,6 +295,28 @@ function updateActiveLanguageButton(lang) {
         if (btn.getAttribute('data-lang') === lang) {
             btn.classList.add('active');
         }
+    });
+}
+
+/**
+ * Setup mobile hamburger menu
+ */
+function setupHamburgerMenu() {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
     });
 }
 
