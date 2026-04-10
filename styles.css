@@ -139,6 +139,17 @@ a:hover {
     border-bottom-color: var(--color-accent);
 }
 
+.nav-link-featured {
+    color: var(--color-primary);
+    font-weight: 700;
+    border-bottom: 3px solid var(--color-primary);
+    padding-bottom: 2px;
+}
+
+.nav-link-featured:hover {
+    border-bottom-color: var(--color-accent);
+}
+
 .language-switcher {
     display: flex;
     gap: var(--spacing-xs);
