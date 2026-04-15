@@ -187,7 +187,7 @@ window.translations = translations;
 document.addEventListener('DOMContentLoaded', () => {
     initializeLanguage();
     setupLanguageSwitcher();
-    setupSmoothScroll();
+    setupTabNavigation();
     setupHamburgerMenu();
 });
 
@@ -335,65 +335,66 @@ function setupHamburgerMenu() {
 }
 
 /**
- * Enhance smooth scrolling for navigation links
+ * Show a specific section, hide all others
  */
-function setupSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const href = this.getAttribute('href');
-            // Only prevent default if it's a valid anchor link
-            if (href !== '#' && document.querySelector(href)) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
+function showSection(sectionId) {
+    const validSections = ['about', 'gallery', 'useful-links', 'restaurants', 'travel-tips', 'testimonials', 'contact'];
+    if (!validSections.includes(sectionId)) sectionId = 'about';
+
+    // Hide all sections, show target
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('section--active'));
+    const target = document.getElementById(sectionId);
+    if (target) {
+        target.classList.add('section--active');
+        window.scrollTo(0, 0);
+    }
+
+    // Show hero only on home (about)
+    const hero = document.querySelector('.hero');
+    if (hero) hero.style.display = sectionId === 'about' ? '' : 'none';
+
+    // Update active nav link
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + sectionId) link.classList.add('active');
     });
+
+    // Update URL hash without scrolling
+    history.replaceState(null, null, '#' + sectionId);
 }
 
 /**
- * Add scroll animations for elements
+ * Setup tab navigation — replaces smooth scroll
  */
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
-
-// Observe all gallery items and cards
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.gallery-item, .link-card, .restaurant-item, .tip-card, .feature-card').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
-});
-
-/**
- * Mobile menu handling (if needed in future)
- */
-function setupMobileMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            // Could add mobile menu close logic here
+function setupTabNavigation() {
+    // Handle all anchor links pointing to sections
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const sectionId = this.getAttribute('href').slice(1);
+            const validSections = ['about', 'gallery', 'useful-links', 'restaurants', 'travel-tips', 'testimonials', 'contact'];
+            if (validSections.includes(sectionId)) {
+                e.preventDefault();
+                showSection(sectionId);
+                // Close mobile menu if open
+                const hamburger = document.getElementById('hamburger');
+                const navMenu = document.getElementById('navMenu');
+                if (hamburger) hamburger.classList.remove('active');
+                if (navMenu) navMenu.classList.remove('active');
+            }
         });
     });
+
+    // Brand title click → home
+    const navBrand = document.querySelector('.nav-brand');
+    if (navBrand) {
+        navBrand.style.cursor = 'pointer';
+        navBrand.addEventListener('click', () => showSection('about'));
+    }
+
+    // Read hash on load to show correct section
+    const hash = window.location.hash.slice(1);
+    const validSections = ['about', 'gallery', 'useful-links', 'restaurants', 'travel-tips', 'testimonials', 'contact'];
+    showSection(validSections.includes(hash) ? hash : 'about');
 }
 
 // Utility: Log language stats for debugging
