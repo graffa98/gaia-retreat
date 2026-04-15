@@ -60,7 +60,7 @@ const translations = {
         'contact.guidebook': 'Guidebook Riomaggiore',
         'contact.restaurants': 'Ristoranti Consigliati',
         'contact.info-links': 'Informazioni Utili',
-        'footer.copyright': '© 2024 Gaia Retreat Apartment. Tutti i diritti riservati.'
+        'footer.copyright': '© 2025 Gaia Retreat Apartment. Tutti i diritti riservati.'
     },
     en: {
         'nav.about': 'Information',
@@ -120,7 +120,7 @@ const translations = {
         'contact.guidebook': 'Riomaggiore Guidebook',
         'contact.restaurants': 'Recommended Restaurants',
         'contact.info-links': 'Useful Information',
-        'footer.copyright': '© 2024 Gaia Retreat Apartment. All rights reserved.'
+        'footer.copyright': '© 2025 Gaia Retreat Apartment. All rights reserved.'
     },
     fr: {
         'nav.about': 'Informations',
@@ -180,7 +180,7 @@ const translations = {
         'contact.guidebook': 'Guide Riomaggiore',
         'contact.restaurants': 'Restaurants Recommandes',
         'contact.info-links': 'Informations Utiles',
-        'footer.copyright': '© 2024 Gaia Retreat Apartment. Tous droits reserves.'
+        'footer.copyright': '© 2025 Gaia Retreat Apartment. Tous droits reserves.'
     }
 };
 
