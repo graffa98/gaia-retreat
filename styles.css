@@ -751,6 +751,9 @@ a:hover {
     .hero {
         min-height: 400px;
         padding: var(--spacing-lg) var(--spacing-md);
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
     }
 
     .hero-title {
