@@ -12,7 +12,7 @@ const translations = {
         'nav.tips': 'Guida',
         'nav.contact': 'Contatti',
         'hero.title': 'Gaia Retreat Apartment',
-        'hero.subtitle': 'Un\'esperienza indimenticabile a Riomaggiore, Cinque Terre',
+        'hero.subtitle': 'Riomaggiore, Cinque Terre',
         'hero.cta': 'Scopri di più',
         'about.title': 'Benvenuto al Gaia Retreat',
         'about.description': 'Un rifugio esclusivo nel cuore di Riomaggiore, dove il mare diventa parte della vostra casa. Dal balcone privato potrete regalarvi ogni sera tramonti indimenticabili e la magia della Via dell\'Amore illuminata. Al mattino concedetevi una colazione lenta e silenziosa, guardando le prime barche passare proprio sotto di voi. La posizione è perfetta per scoprire le Cinque Terre a piedi e immergervi nell\'autentica atmosfera del borgo ligure.',
@@ -70,7 +70,8 @@ const translations = {
         'nav.tips': 'Guide',
         'nav.contact': 'Contact',
         'hero.title': 'Gaia Retreat Apartment',
-        'hero.subtitle': 'An unforgettable experience in Riomaggiore, Cinque Terre',
+        'hero.subtitle': 'Riomaggiore, Cinque Terre',
+
         'hero.cta': 'Learn More',
         'about.title': 'Welcome to Gaia Retreat',
         'about.description': 'A welcoming retreat in the heart of Riomaggiore, perfect for discovering the beauty of Cinque Terre. This page provides all the useful information to plan your stay and live an authentic experience.',
@@ -128,7 +129,8 @@ const translations = {
         'nav.tips': 'Guide',
         'nav.contact': 'Contact',
         'hero.title': 'Gaia Retreat Apartment',
-        'hero.subtitle': 'Une experience inoubliable a Riomaggiore, Cinque Terre',
+        'hero.subtitle': 'Riomaggiore, Cinque Terre',
+
         'hero.cta': 'En Savoir Plus',
         'about.title': 'Bienvenue a Gaia Retreat',
         'about.description': 'Une retraite accueillante au coeur de Riomaggiore, parfaite pour decouvrir la beaute des Cinque Terre. Cette page fournit toutes les informations utiles pour planifier votre sejour et vivre une experience authentique.',
